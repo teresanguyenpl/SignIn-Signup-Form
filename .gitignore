@@ -1,2 +1,13 @@
+#Environments
 .env
+
+#Files
 node_modules
+
+#Express json
+
+
+#Mac DS Store
+.DS_Store
+
+
