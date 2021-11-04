@@ -2,7 +2,7 @@
 .env
 
 #Files
-node_modules
+node_modules/
 
 #Express json
 
