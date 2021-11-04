@@ -5,7 +5,8 @@
 node_modules/
 
 #Express json
-
+package-lock.json
+package.json
 
 #Mac DS Store
 .DS_Store
