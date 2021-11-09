@@ -18,6 +18,7 @@ body {
     float: left;
     width: 50%;
     height: 100%;
+    background-image: url(left.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -152,22 +153,11 @@ form input:focus {
     border-bottom: 2px solid #4A7DB8;
 }
 
-form label {
-    position: absolute;
+form input:placeholder-shown {
     color:#7B7575; 
     font-size: 15px;
-    pointer-events: none;
     left: 5px;
     top: 10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-  }
-
-form input:focus ~ label, input:valid ~ label {
-    top: -20px;
-    font-size: 12px;
-    color: #4A7DB8;
 }
 
 form button {
