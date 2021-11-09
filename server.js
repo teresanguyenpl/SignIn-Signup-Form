@@ -1,7 +1,11 @@
 const express = require('express')
 const app = express()
 
-app.set('view engine', 'ejs')
+
+app.set('view engine', 'ejs') //For ejs
+app.use(express.static(__dirname + '/public'));  //For css
+
+
 
 app.get('/', (req, res)  => {
     console.log("Here")
@@ -21,7 +25,6 @@ app.get('/register', (req, res) => {
 })
 
 app.post('/register', (req, res) => {
-
 })
 
 
