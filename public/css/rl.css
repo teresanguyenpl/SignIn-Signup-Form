@@ -75,31 +75,9 @@ body {
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
 }
 
-.right-outer-re {
-    position: absolute;
-    height: 600px;
-    width: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FEFFFF;
-    border-radius: 25px;
-    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
-}
-
 .right-outer form {
     position: absolute;
     height: 480px;
-    width: 78%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Merienda';
-}
-
-.right-outer-re form {
-    position: absolute;
-    height: 520px;
     width: 78%;
     top: 50%;
     left: 50%;
@@ -117,25 +95,9 @@ form h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-form h2 {
-    position: relative;
-    font-weight: bold;
-    font-size: 35px;
-    margin-top: 0;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #B85F4A;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 form .group { 
     position:relative; 
     margin-top: 40px;
-}
-
-.right-outer-re form .group-re { 
-    position:relative; 
-    margin-top: 30px;
 }
 
 form input {
@@ -150,29 +112,29 @@ form input {
 
 form input:focus {
     outline: none;
-    border-bottom: 2px solid #4A7DB8;
+    border-bottom: 2px solid #B85F4A;
 }
 
-form input:placeholder-shown {
-    color:#7B7575; 
+form label {
     font-size: 15px;
-    left: 5px;
-    top: 10px;
+    position: absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
 }
+
+form input:focus ~ label, input:valid ~ label 		{
+    top: -20px;
+    font-size: 12px;
+    color:#B85F4A;
+  }
 
 form button {
     position: relative;
     margin-top: 50px;
-    width: 236px;
-    height: 38px;
-    background: #B85F4A;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
-
-.right-outer-re form button {
-    position: relative;
-    margin-top: 40px;
     width: 236px;
     height: 38px;
     background: #B85F4A;
@@ -229,10 +191,111 @@ form .ask p a:hover {
     color: #195596;
 }
 
+/* REGISTER */
+
+.right-outer-re {
+    position: absolute;
+    height: 620px;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FEFFFF;
+    border-radius: 25px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+}
+
+.right-outer-re form {
+    position: absolute;
+    height: 565px;
+    width: 78%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Merienda';
+}
+
+form h2 {
+    position: relative;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #B85F4A;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form .group-re { 
+    position:relative; 
+    margin-top: 35px;
+}
+
+form .group-re input {
+    font-family: 'Merienda';
+    font-size: 12px;
+    padding: 10px 10px 5px 5px;
+    display: block;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+form .group-re input:focus {
+    outline: none;
+    border-bottom: 1px solid #B85F4A;
+}
+
+form .group-re label {
+    font-size: 13px;
+    position: absolute;
+    pointer-events:none;
+    left: 5px;
+    top: 10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+form .group-re input:focus ~ label, input:valid ~ label 		{
+    top: -11px;
+    text-decoration-style: bold;
+    font-size: 12px;
+    color:#B85F4A;
+  }
+
+form .re-button button {
+    position: relative;
+    margin-top: 37px;
+    width: 200px;
+    height: 38px;
+    background: #B85F4A;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+form .re-button button a {
+    font-family: 'Merienda';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+form .re-button button:hover {
+    background: #E5A395;
+}
+
+form .re-button  a:hover {
+    color: black;
+}
+
 form .ask-re p {
     position: relative;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 14px;
     line-height: 22px;
 }
@@ -245,6 +308,7 @@ form .ask-re p a {
 form .ask-re p a:hover {
     color: #195596;
 }
+
 
 /* Tablet */
 @media screen and (max-width: 960px) {
