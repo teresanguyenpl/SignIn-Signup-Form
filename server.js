@@ -27,6 +27,16 @@ app.get('/register', (req, res) => {
 app.post('/register', (req, res) => {
 })
 
+app.get('/home', (req,res) => {
+    res.render('home.ejs')
+})
+
+app.get('/about', (req,res) => {
+    res.render('about.ejs')
+})
+
+
+
 
 app.listen(3000) 
 
