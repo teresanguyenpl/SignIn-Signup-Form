@@ -1,0 +1,354 @@
+body {
+    background: #9297B9;
+}
+
+.outer {
+    position: absolute;
+    width: 90%;
+    height: 675px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 25px 30px 20px rgba(0, 0, 0, 0.25);
+    background: #E5A395;
+}
+
+.left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-image: url(left.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.left h1 {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-family: 'Merienda';
+    font-style: normal;
+    font-size: 45px;
+    line-height: 72px;
+    color: #B85F4A;
+    text-shadow: 15px 0px 5px #E5E6E9;
+}
+
+.left p {
+    position: absolute;
+    top: 82%;
+    left: 10%;
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #C47360;
+    text-shadow: 15px 0px 5px #CFD1D5;
+}
+
+.left p a {
+    color: #4A7DB8;
+    text-decoration: underline;
+}
+
+.left p a:hover {
+    color: #195596;
+}
+
+.right {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.right-outer {
+    position: absolute;
+    height: 550px;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FEFFFF;
+    border-radius: 25px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+}
+
+.right-outer form {
+    position: absolute;
+    height: 480px;
+    width: 78%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Merienda';
+}
+
+form h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 55px;
+    text-align: center;
+    color: #B85F4A;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form .group { 
+    position:relative; 
+    margin-top: 40px;
+}
+
+form input {
+    font-family: 'Merienda';
+    font-size: 15px;
+    padding: 10px 10px 5px 5px;
+    display: block;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+form input:focus {
+    outline: none;
+    border-bottom: 2px solid #B85F4A;
+}
+
+form label {
+    font-size: 15px;
+    position: absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+form input:focus ~ label, input:valid ~ label 		{
+    top: -20px;
+    font-size: 12px;
+    color:#B85F4A;
+  }
+
+form button {
+    position: relative;
+    margin-top: 50px;
+    width: 236px;
+    height: 38px;
+    background: #B85F4A;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+form button a {
+    font-family: 'Merienda';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+form button:hover {
+    background: #E5A395;
+}
+
+form button a:hover {
+    color: black;
+}
+
+form .fp p {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #4A7DB8;
+}
+
+form .fp p:hover {
+    color: #195596;
+}
+
+form .ask p {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+form .ask p a {
+    color: #4A7DB8;
+    text-decoration-line: underline;
+}
+
+form .ask p a:hover {
+    color: #195596;
+}
+
+/* REGISTER */
+
+.right-outer-re {
+    position: absolute;
+    height: 620px;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FEFFFF;
+    border-radius: 25px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+}
+
+.right-outer-re form {
+    position: absolute;
+    height: 565px;
+    width: 78%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Merienda';
+}
+
+.right-outer-re form h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: -10px;
+    text-align: center;
+    color: #B85F4A;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form .group-re { 
+    position:relative; 
+    margin-top: 40px;
+}
+
+form .group-re input {
+    font-family: 'Merienda';
+    font-size: 13px;
+    padding: 10px 10px 5px 5px;
+    display: block;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #9e8d8d;
+}
+
+form .group-re input:focus {
+    outline: none;
+    border-bottom: 2px solid #4A7DB8;
+}
+
+form .group-re.success input {
+    border-bottom: 2px solid #2ecc71;
+}
+
+form .group-re.error input {
+    border-bottom: 2px solid #e74c3c;
+}
+
+form .group-re label {
+    font-size: 13px;
+    position: absolute;
+    pointer-events:none;
+    left: 5px;
+    top: 10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+form .group-re i {
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+form .group-re.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+form .group-re.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+form .group-re small {
+    color: #e74c3c;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+form .group-re.error small {
+    left: 5px;
+    bottom: -20px;
+    visibility: visible;
+    font-size: 10px;
+}
+
+form .group-re input:focus ~ label, input:valid ~ label {
+    top: -11px;
+    text-decoration-style: bold;
+    font-size: 10px;
+    color: black;
+  }
+
+form .re-button {
+    position: relative;
+    margin-top: 30px;
+    width: 220px;
+    height: 38px;
+    background: #B85F4A;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+form .re-button button a {
+    font-family: 'Merienda';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 960px) {
+    .outer .left {
+        display: none;
+    }
+
+    .outer .right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-outer {
+        height: 600px;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+}
