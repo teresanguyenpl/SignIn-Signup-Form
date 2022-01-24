@@ -4,68 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lr.css">
+    <link rel="stylesheet" href="form.css">
     <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2893b555a3.js" crossorigin="anonymous"></script>
     <title>Register</title>
 </head>
 <body>
     <div class="outer">
         <div class="left" style="background-image: url(left.jpg);">
             <h1>Welcome</h1>
-            <p>Sign up to continue or <a href="/login">Sign in</a></p>
+            <p>Sign up to continue or <a href="/signin.html">Sign in</a></p>
         </div>
         <div class="right">
             <div class="right-outer-re">
-                <form id="form">
+                <form>
                     <h1>Register</h1>
                     <div class="group-re">
                         <input type="text" id="first-name" name="first-name" required="required">
                         <label>First Name</label>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
                     </div>
                     <div class="group-re">
                         <input type="text" id="last-name" name="last-name" required="required"> 
                         <label>Last Name</label>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
                     </div>
                     <div class="group-re">
                         <input type="text" id="email" name="email" required="required">
                         <label>Email</label>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
                     <div class="group-re">      
                       <input type="text" id="user-name" name="user-name" required="required">
                       <label>Username</label>
-                      <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
                     </div>      
                     <div class="group-re">      
                       <input type="password" id="password" name="password" required="required">
                       <label>Password</label>
-                      <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
                     </div>
                     <div class="group-re">      
                         <input type="password" id="re-password" name="re-password" required="required">
                         <label>Re-Password</label>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
                     </div>
                     <center>
-                        <button class="re-button" type="submit"><a href="#">Sign Up</a></button>
+                        <button type="submit" class="re-button">Sign Up</button>
                     </center>
                 </form>
             </div>
         </div>
     </div>
-    <script src="dp.js"></script>
 </body>
 </html>

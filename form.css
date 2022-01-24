@@ -149,25 +149,20 @@ form button {
     background: #B85F4A;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-}
-
-form button a {
     font-family: 'Merienda';
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 form button:hover {
     background: #E5A395;
-}
-
-form button a:hover {
     color: black;
 }
+
 
 form .fp p {
     position: relative;
@@ -252,15 +247,7 @@ form .group-re input {
 
 form .group-re input:focus {
     outline: none;
-    border-bottom: 2px solid #4A7DB8;
-}
-
-form .group-re.success input {
-    border-bottom: 2px solid #2ecc71;
-}
-
-form .group-re.error input {
-    border-bottom: 2px solid #e74c3c;
+    border-bottom: 2px solid #B85F4A;
 }
 
 form .group-re label {
@@ -281,56 +268,32 @@ form .group-re i {
     right: 10px;
 }
 
-form .group-re.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-}
-
-form .group-re.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
-}
-
-form .group-re small {
-    color: #e74c3c;
-    visibility: hidden;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-form .group-re.error small {
-    left: 5px;
-    bottom: -20px;
-    visibility: visible;
-    font-size: 10px;
-}
-
 form .group-re input:focus ~ label, input:valid ~ label {
     top: -11px;
     text-decoration-style: bold;
     font-size: 10px;
-    color: black;
+    color: #B85F4A;
   }
 
 form .re-button {
     position: relative;
-    margin-top: 30px;
+    margin-top: 35px;
     width: 220px;
     height: 38px;
     background: #B85F4A;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-}
-
-form .re-button button a {
     font-family: 'Merienda';
     font-weight: bold;
     font-size: 15px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
-    text-decoration: none;
+    cursor: pointer;
+}
+
+form .re-button:hover {
+    color: black;
 }
 
 
@@ -350,5 +313,4 @@ form .re-button button a {
     }  
 }
 
-@media screen and (max-width: 768px) {
-}
+
