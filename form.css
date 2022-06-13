@@ -296,9 +296,38 @@ form .re-button:hover {
     color: black;
 }
 
+@media screen and (max-width: 1024px) {
+    .left h1 {
+        top: 74%;
+        left: 7%;
+        font-size: 40px;
+    }
+    
+    .left p {
+        top: 85%;
+        left: 12%;
+    }
+    .right-outer {
+        height: 590px;
+        width: 75%;
+    }
+    form button {
+        width: 195px;
+        height: 38px;
+        background: #B85F4A;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        font-family: 'Merienda';
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
 
-/* Tablet */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
     .outer .left {
         display: none;
     }
@@ -311,6 +340,96 @@ form .re-button:hover {
     .right-outer {
         height: 600px;
     }  
+
 }
+
+@media screen and (max-width: 500px) {
+    .outer {
+        background-color: #9297B9;
+        box-shadow: none;
+    }
+    .right-outer {
+        height: 100%;
+        width: 90%;
+    }
+    .right-outer form {
+        position: relative;
+        height: 100%;
+        width: 80%;
+    }
+    
+    form h1 {
+        top: 20px;
+        font-size: 40px;
+    }
+    
+    form .group { 
+        position: relative; 
+        margin-top: 65px;
+    }
+    
+    form input {
+        font-size: 20px;
+    }
+    
+    form label {
+        font-size: 18px;
+    }
+    
+    form input:focus ~ label, input:valid ~ label {
+        font-size: 15px;
+      }
+    
+    form button {
+        margin-top: 90px;
+        width: 250px;
+        height: 45px;
+        font-size: 23px;
+    }
+    
+    form .fp p {
+        margin-top: 30px;
+        font-size: 17px;
+    }
+    
+    form .ask p {
+        margin-top: 80px;
+        font-size: 19px;
+    }
+}
+
+/* @media screen and (max-width: 375px) {
+    .right-outer {
+        height: 90%;
+    }
+    form h1 {
+        top: 0;
+        font-size: 35px;
+    }
+    form button {
+        margin-top: 20px;
+    }
+    form .ask p {
+        margin-top: 70px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .right-outer {
+        height: 740px;
+    }
+    form .group { 
+        position: relative; 
+        margin-top: 60px;
+    }
+    form button {
+        margin-top: 65px;
+    }
+    form .ask p {
+        margin-top: 70px;
+        font-size: 16px;
+    }
+} */
 
 
